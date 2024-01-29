@@ -1,0 +1,71 @@
+.admin-all-post-container{
+    /* background: rgb(184, 182, 182); */
+    border-radius: 1rem;
+    padding: 15px;
+    height: 100vh;
+}
+.admin-add-post-btn-container span{
+    background: gray;
+    border: 2px solid gray;
+    color: white;
+    padding: 5px;
+    border-radius: 0.5rem;
+    margin:20px 0;
+    cursor: pointer;
+}
+.admin-add-post-btn-container span:hover{
+    background: white;
+    color:black;
+    /* border: 0.1px solid gray; */
+
+}
+.admin-post-filter-category{
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+.admin-post-filter-category span p:hover {
+    cursor: pointer;
+    color: gray;
+}
+.admin-all-post-display{
+    background: white;
+    padding:80px 20px;
+    border-radius: 1rem;
+}
+.admin-all-post-table-heading{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    /* background-color: red; */
+    border: 1px solid black;
+    padding: 10px ;
+}
+.admin-post-heading{
+    border: 2px solid black;
+}
+/* .admin-all-post-table-data{
+    margin: 30px 0;
+    justify-content: space-around;
+    display: flex;
+    /* background: red; */
+    /* padding: 20px 0;
+    cursor: pointer;
+}
+.admin-all-post-table-data:hover{ */
+    /* background: gray;
+    color: white;     */
+/* } */
+.admin-all-post-table-data{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-around;
+    word-wrap: break-word;
+    padding: 10px;
+}
+
+.admin-each-post-table-data{
+    border: 2px solid red;
+    text-align: center;
+    padding: 20px;
+}

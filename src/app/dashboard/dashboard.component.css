@@ -1,0 +1,42 @@
+.admin-dashboard{
+    background-color: #f4f3fa;  
+}
+.admin-container{
+    display: flex;
+}
+.admin-sidebar-left{
+    /* width: 18vw; */
+    background-color: rgb(61, 61, 61);
+    /* height: 100%; */
+    /* position: sticky; */
+}
+
+.admin-sidebar-container-right{
+    /* background-color: green; */
+    width:82vw;
+    padding: 0px 10px;
+    /* background: red; */
+    height: auto;
+    height: 100vh;
+    /* position: fixed; */
+}
+.admin-container-graphs{
+    display: flex;
+    gap: 20px;
+}
+.container-analytic-card-left,.admin-container-content-right{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 700px;
+}
+.container-analytic-card-right,.admin-container-content-left{
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 350px;
+}
+.admin-container-content-post{
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0 0 0 ;
+    gap: 20px;
+}

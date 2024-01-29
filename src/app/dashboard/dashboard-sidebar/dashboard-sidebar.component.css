@@ -1,0 +1,82 @@
+.active_sidebar_nav {
+    background-color: orangered;
+    color: black;
+}
+.active_sidebar_sub_nav {
+    color: black;
+}
+.dashboard-sidebar-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dashboard-logo-container{
+    text-align: center;
+    margin:30px 0;
+}
+.dashboard-logo-container img{
+    width: 220px;
+}
+.dashboard-sidebar-menu-name svg{
+    color: red;
+}
+.dashboard-sidebar-menu-name{
+    /* background-color: aqua; */
+    padding: 10px 25px;
+    /* text-align: center; */
+    /* margin: auto; */
+    cursor: pointer;
+}
+.dashboard-sidebar-menu-name:hover{
+    border: 1px solid gray;
+}
+
+.dashboard-sidebar-menu-name a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding-left:10px;
+    font-weight: 500;
+}
+
+/* now */
+.itinerary-sub-menu-container,.blog-sub-menu-container,.page-sub-menu-container,.tour-sub-menu-container,.car-sub-menu-container,.seo-sub-menu-container,.setting-sub-menu-container{
+    background-color: #f4f3fa;
+    color: gray;
+    /* text-align: center; */
+    margin:0 5px;
+    padding: 5px 0 5px 25px;
+}
+.itinerary-sub-menu-container div:hover,
+.blog-sub-menu-container div:hover,
+.page-sub-menu-container div:hover,
+.tour-sub-menu-container div:hover,
+.car-sub-menu-container div:hover,
+.seo-sub-menu-container div:hover,
+.setting-sub-menu-container div:hover {
+  width: 100%;
+  color: black;
+}
+.itinerary-sub-menu-container div,
+.blog-sub-menu-container div,
+.page-sub-menu-container div,
+.tour-sub-menu-container div,
+.car-sub-menu-container div,
+.seo-sub-menu-container div,
+.setting-sub-menu-container div {
+    font-size: 14px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+
+/* now */
+/* .blog-sidebar-container:hover .blog-sub-menu-container,.page-sidebar-container:hover .page-sub-menu-container,.tour-sidebar-container:hover .tour-sub-menu-container,.itinerary-sidebar-container:hover .itinerary-sub-menu-container,.car-sidebar-container:hover .car-sub-menu-container,.seo-sidebar-container:hover .seo-sub-menu-container,.setting-sidebar-container:hover .setting-sub-menu-container{
+    display: block;
+    overflow: hidden;
+    animation: dashboardMenu 1s ease;
+}
+@keyframes dashboardMenu {
+    0%   {height: 0px; }
+  100% {height: 80px;}
+}  */

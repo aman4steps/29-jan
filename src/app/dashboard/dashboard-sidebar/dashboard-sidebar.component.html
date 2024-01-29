@@ -1,0 +1,125 @@
+<div class="dashboard-sidebar-component">
+    <div class="dashboard-logo-container">
+        <img style="width: 200px; padding: 12px 0;" src="https://www.bizarexpedition.com/bx/images/logo/15903060991.png" alt="">
+    </div>
+    <div class="dashboard-sidebar-menu">
+        <div routerLink="dashboard" class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link1'" (click)="setActiveLink('link1')">
+            <fa-icon style="color: rgb(192, 192, 192);" [icon]="faHouse"></fa-icon>
+            <a  >Dashboard</a>
+        </div>
+        
+        <!-- Blog Section -->
+        <div class="blog-sidebar-container">
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link2'" (click)="setActiveLink('link2')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faBlog"></fa-icon>
+                <a>Blog</a> 
+            </div>
+            <div class="blog-sub-menu-container" [style.display]="activeLink === 'link2' ? 'block' : 'none'">
+                <div class="blog-sub-menu"  routerLink="allpost" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink0'" (click)="setActiveSubLink('subLink0')">All Posts</div>
+                <div class="blog-sub-menu" routerLink="admin-new-post-create" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink1'" (click)="setActiveSubLink('subLink1')">Add New Post</div>
+                <div class="blog-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink2'" (click)="setActiveSubLink('subLink2')">Categorys</div>
+                <div class="blog-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink3'" (click)="setActiveSubLink('subLink3')">Tags</div>
+            </div>
+        </div>
+
+        <!-- Media Section -->
+        <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link3'" (click)="setActiveLink('link3')">
+            <fa-icon style="color: rgb(192, 192, 192);" [icon]="faImage"></fa-icon>
+            <a >Media</a>
+        </div>
+
+        <!-- Page Section -->
+        <div class="page-sidebar-container">
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link4'" (click)="setActiveLink('link4')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faFile"></fa-icon>
+                <a>Page</a>
+            </div>
+            <div class="page-sub-menu-container" [style.display]="activeLink === 'link4' ? 'block' : 'none'">
+                <div class="page-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink4'" (click)="setActiveSubLink('subLink4')">All Pages</div>
+                <div class="page-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink5'" (click)="setActiveSubLink('subLink5')">Add New</div>
+                
+            </div>
+        </div>
+
+        <!-- Tour Package Section -->
+        <div class="tour-sidebar-container">
+
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link5'" (click)="setActiveLink('link5')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faPlaneDeparture"></fa-icon>
+                <a>Tour Package</a>
+            </div>
+            <div class="tour-sub-menu-container" [style.display]="activeLink === 'link5' ? 'block' : 'none'">
+                <div class="tour-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink6'" (click)="setActiveSubLink('subLink6')">A</div>
+                <div class="tour-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink7'" (click)="setActiveSubLink('subLink7')">B</div>
+                <div class="tour-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink8'" (click)="setActiveSubLink('subLink8')">C</div>
+                <div class="tour-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink9'" (click)="setActiveSubLink('subLink9')">D</div>
+            </div>
+        </div>
+
+        <!-- Itinerary Section -->
+        <div class="itinerary-sidebar-container">
+            
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link6'" (click)="setActiveLink('link6')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faCalendarDays"></fa-icon>
+                <a  >Itinerary Builder</a>
+            </div>
+            <div class="itinerary-sub-menu-container" [style.display]="activeLink === 'link6' ? 'block' : 'none'">
+                <div class="itinerary-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink10'" (click)="setActiveSubLink('subLink10')">A</div>
+                <div class="itinerary-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink11'" (click)="setActiveSubLink('subLink11')">B</div>
+                <div class="itinerary-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink12'" (click)="setActiveSubLink('subLink12')">C</div>
+                <div class="itinerary-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink13'" (click)="setActiveSubLink('subLink13')">D</div>
+            </div>
+        </div>
+
+        <!-- Car Rental Section -->
+        <div class="car-sidebar-container">
+
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link7'" (click)="setActiveLink('link7')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faCar"></fa-icon>
+                <a  >Car Rental</a>
+            </div>
+            <div class="car-sub-menu-container" [style.display]="activeLink === 'link7' ? 'block' : 'none'">
+                <div class="car-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink2'" (click)="setActiveSubLink('subLink14')">A</div>
+                <div class="car-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink15'" (click)="setActiveSubLink('subLink15')">B</div>
+                <div class="car-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink16'" (click)="setActiveSubLink('subLink16')">C</div>
+                <div class="car-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink17'" (click)="setActiveSubLink('subLink17')">D</div>
+            </div>
+        </div>
+        
+        <!-- Seo Section -->
+        <div class="seo-sidebar-container">
+
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link8'" (click)="setActiveLink('link8')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faSearchPlus"></fa-icon>
+                <a  >SEO</a>
+            </div>
+            <div class="seo-sub-menu-container" [style.display]="activeLink === 'link8' ? 'block' : 'none'">
+                <div class="seo-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink18'" (click)="setActiveSubLink('subLink18')">A</div>
+                <div class="seo-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink19'" (click)="setActiveSubLink('subLink19')">B</div>
+                <div class="seo-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink20'" (click)="setActiveSubLink('subLink20')">C</div>
+                <div class="seo-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink21'" (click)="setActiveSubLink('subLink21')">D</div>
+            </div>
+        </div>
+
+        <!-- Setting Section -->
+        <div class="setting-sidebar-container">
+            <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link9'" (click)="setActiveLink('link9')">
+                <fa-icon style="color: rgb(192, 192, 192);" [icon]="faGears"></fa-icon>
+                <a  >Setting</a>
+            </div>
+            <div class="setting-sub-menu-container" [style.display]="activeLink === 'link9' ? 'block' : 'none'">
+                <div class="setting-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink22'" (click)="setActiveSubLink('subLink22')">A</div>
+                <div class="setting-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink23'" (click)="setActiveSubLink('subLink23')">B</div>
+                <div class="setting-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink24'" (click)="setActiveSubLink('subLink24')">C</div>
+                <div class="setting-sub-menu" [class.active_sidebar_sub_nav]="activeSubLink === 'subLink25'" (click)="setActiveSubLink('subLink25')">D</div>
+            </div>
+        </div>
+
+        <!-- Logout -->
+        <div class="dashboard-sidebar-menu-name" [class.active_sidebar_nav]="activeLink === 'link10'" (click)="setActiveLink('link10')">
+            <!-- <fa-icon style="color: rgb(192, 192, 192);" [icon]="faRightFromBracket"></fa-icon> -->
+            <a  >Logout</a>
+        </div>
+    </div>
+    
+</div>
